@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        .contact-section {
+            padding : 20px;
+            text-align : center ;
+            background :black;
+            border : 1px solid rgb(14, 14, 14) ;
+        }
+
+        .contact-section h2 {
+            font-size: 24px;
+            color: #f0dddd;
+            text-align : center ; 
+        }
+
+        .contact-form {
+            display: flex; 
+            flex-direction : column ;
+            max-width: 600px; 
+            margin : 0 auto ; 
+        }
+
+        .contact-form label {
+
+            text-align: left;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            color: #e5d5d5;  
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #090100; 
+            border-radius: 5px; 
+            width: 100%; 
+        }
+
+        .contact-form button {
+
+            padding: 10px 15px; 
+            color: white; 
+            background-color: #007bff; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+
+        .contact-form button:hover {
+
+            background-color: #0056b3;
+         }
+
+        footer{
+
+            padding: 20px; 
+            text-align : center ; 
+            background : #333 ; 
+            color : white ; 
+        }
+
+        .footer-content p {
+
+            margin: 5px 0; 
+        }
+        button{
+            background-color: #0f0f0f;
+            color: rgb(0, 200, 255);
+            
+            
+        }
+        .third{
+            text-align: left;
+            width: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-section">
+        <h2>Contact Me</h2>
+        <form action="handleSubmit()" method="post" class="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name please" required>
+    
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required placeholder="For replying you back">
+            
+            <label for="phone Number">Phone number:</label>
+            <input type="number" id="phone Number" name="Phone Number" required placeholder="incase i cant reply through mail">
+    
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="what is the information you need from me?" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Detailed explanation about subject please" required></textarea>
+
+            <form onsubmit="handleSubmit(); return false;"></form>
+    
+            <div class="third"><button type="submit"><b>Send Message </b></button></div>
+        </form>
+    </div>
+    
+    
+    <footer>
+        <div class="footer-content">
+            <p><b><strong>Contact Details:</strong></b></p><br>
+            <p>Phone: +91 8904275456</p>
+            <p>Email: r.deekshith05@gmail.com</p>
+            <p>Address: Bengaluru , Karnataka ,INDIA</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #040404;
+            background-color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #0a0a0a;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .education-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .education {
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .education:hover {
+            transform: translateY(-5px);
+        }
+
+        .education h3 {
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .education p {
+            margin-bottom: 5px;
+        }
+
+        .education .date {
+            font-style: italic;
+            color: #1a1c1d;
+        }
+
+        @media (max-width: 768px) {
+            .education-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Education Qualifications</h1>
+        <p>Here are my educational details</p>
+    </header>
+
+    <div class="container">
+        <div class="education-grid">
+            <div class="education">
+                <h3>Bachelor of Technology</h3>
+                <p>Lovely Professional University</p>
+                <p>GPA: --</p>
+                <p class="date">2024 - 2028</p>
+            </div>
+            <div class="education">
+                <h3>Secondary (Intermediate)</h3>
+                <p>Sri chaitanya junior college</p>
+                <p>Marks:-713/1000 ie,71.3%</p>
+                <p class="date">2022 - 2024</p>
+            </div>
+            <div class="education">
+                <h3>Primary School</h3>
+                <p>Shams High School</p>
+                <p>Marks:-412/625 ie,65.92%</p>
+                <p class="date">2021 - 2022</p>
+            </div>
+            <div class="education">
+                <h3>Online Certifications</h3>
+                <p>Non technical moocs in skillera & <br> Technical moocs in linux and various cyber security tools</p>
+                <p class="date"> Present</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
